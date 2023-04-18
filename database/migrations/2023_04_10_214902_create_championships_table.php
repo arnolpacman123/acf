@@ -16,9 +16,8 @@ class CreateChampionshipsTable extends Migration
         Schema::create('championships', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('year');
+            $table->date('start_date');
             $table->text('description');
-
             $table->timestamps();
         });
     }

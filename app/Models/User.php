@@ -14,4 +14,9 @@ class User extends Authenticatable
 
     protected $guarded = [];
     protected $table = 'users';
+
+    public function getAuthIdentifier()
+    {
+        return $this->ci;
+    }
 }
